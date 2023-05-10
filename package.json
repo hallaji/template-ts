@@ -1,0 +1,20 @@
+{
+  "name": "exercises-ts",
+  "main": "index.ts",
+  "private": true,
+  "scripts": {
+    "start": "nodemon"
+  },
+  "prettier": {
+    "semi": false
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
