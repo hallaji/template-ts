@@ -1,7 +1,12 @@
 {
-  "name": "exercises-ts",
   "main": "index.ts",
+  "name": "template-ts",
   "private": true,
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "boilerplate"
+  ],
   "scripts": {
     "start": "nodemon"
   },
