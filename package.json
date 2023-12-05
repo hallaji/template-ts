@@ -1,6 +1,6 @@
 {
-  "main": "index.ts",
   "name": "template-ts",
+  "main": "src/index.ts",
   "private": true,
   "license": "MIT",
   "keywords": [
@@ -8,10 +8,31 @@
     "boilerplate"
   ],
   "scripts": {
-    "start": "nodemon"
+    "start": "nodemon",
+    "test": "jest",
+    "lint": "eslint src/ --ext .ts && prettier . --check && tsc --noEmit",
+    "prettify": "prettier . --write"
   },
   "prettier": {
     "semi": false
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended-type-checked"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "parserOptions": {
+      "project": true,
+      "tsconfigRootDir": "."
+    },
+    "root": true,
+    "rules": {
+      "@typescript-eslint/explicit-function-return-type": "error"
+    }
   },
   "dependencies": {
     "date-fns": "^2.30.0"
